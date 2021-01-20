@@ -8,7 +8,4 @@ commands:
     description: pvp shit
 permission:
   default : true
-  pvp.use
-
-
-   
+  pvp.use:
