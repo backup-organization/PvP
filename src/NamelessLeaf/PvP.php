@@ -4,7 +4,7 @@
 #MADE BY
 #NAMELESSLEAF
 #
-namespace NamelessLeaf;
+namespace PvP\NamelessLeaf;
 
 use pocketmine\Player;
 use pocketmine\Server;
