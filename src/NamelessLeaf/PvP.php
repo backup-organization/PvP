@@ -1,4 +1,4 @@
-<php?
+<?php
 
 use pocketmine\Player;
 use pocketmine\Server;
