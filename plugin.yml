@@ -1,6 +1,6 @@
 name: PvP
 author: NamelessLeaf
-api: 3.17.2
+api: [3.0.0-ALPHA11]
 version: "1.0"
 main: NamelessLeaf\PvP
 commands: 
