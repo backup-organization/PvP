@@ -1,4 +1,10 @@
 <?php
+#
+#DO NOT CHANGE 
+#MADE BY
+#NAMELESSLEAF
+#
+namespace NamelessLeaf;
 
 use pocketmine\Player;
 use pocketmine\Server;
