@@ -17,4 +17,4 @@ use pocketmine\event\EventListener;
 use pocketmine\event\player\PlayerInteractEvent;
 use pocketmine\utils\TextFormat;
       
-class Main extends PluginBase implements Listener {
+class Main extends PluginBase implements Listener {}
