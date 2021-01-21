@@ -28,5 +28,25 @@ class PvP extends PluginBase implements Listener {
     return true;
   }   
   
-  
+  $api = $this->getServer()->getPluginManager()->getPlugin("FormAPI");
+        $form = $api->createSimpleForm(function (Player $player, int $data = null){
+                    $result = $data;
+                    if ($result === null) {
+                        return;
+                    }
+                    if($result === 0) {
+                      
+                    }
+              
+                    switch ($result) {
+                        case 0:
+                        break;
+                    }
+                
+                    return;
+                } );
+                $form->setTitle("Title");
+                $form->setContent("yay content");
+                $form->addButton("test");
+                $form->sendToPlayer($player);
 }
