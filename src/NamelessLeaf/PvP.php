@@ -17,7 +17,7 @@ use pocketmine\event\EventListener;
 use pocketmine\event\player\PlayerInteractEvent;
 use pocketmine\utils\TextFormat;
       
-class PvP extends PluginBase implements Listener {
+class Main extends PluginBase implements Listener {
       
       public function onEnable(){
       $this->getServer()->getPluginManager()->registerEvents($this, $this);
