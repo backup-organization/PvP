@@ -56,5 +56,5 @@ class PvP extends PluginBase implements Listener {
             $form->addButton("1vs1");
             $form->addButton("Sumo");
             $form->sendToPlayer;  
-            return $form                              
+            return $form;                            
       }
