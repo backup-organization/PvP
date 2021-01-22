@@ -8,7 +8,7 @@ use pocketmine\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\plugin\PluginBase;
 
-use pocketmine\event\Listener
+use pocketmine\event\Listener;
   
 class main extends PluginBase implements Listener {
 
