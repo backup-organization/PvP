@@ -26,7 +26,7 @@ class main extends PluginBase implements Listener {
   public fuction onCommand(CommandSender $sender, Command $cmd, String $lable, Array $args) : bool {
     
     switch($cmd->getName()){
-      case "test":
+      case "yo":
         if($sender instanceof Player){
           $this->form($sender);
         } else {
@@ -36,5 +36,28 @@ class main extends PluginBase implements Listener {
     return true;
   }
   
-  public function form($player)
+  public function form($player){
+    $api = $this->getServer()->getPluginManager()->getPlugin("FormAPI");
+    $form = $api->createSimpleForm(function (Player $player, int $data = null)){
+      $result = $data;
+      if($result === null){
+        return true;
+      }
+      switch($result){
+        case 0:
+          $player->sendMessage("yes")
+        break;
+          
+        case 1:
+          $player->sendMessage("EXIT")
+        break;
+      }
+    });
+    $form->setTitle("No Way I Fuckinf Missed 1 Thing");
+    $form->setContent("FINALY MOTHER FUCKERS");
+    $form->addButton("No Way");
+    $form->addButton("Exit Form");
+    $form->sendToPlayer($player);
+    return $form;
+  }
 }  
