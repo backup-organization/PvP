@@ -10,6 +10,6 @@ use pocketmine\plugin\PluginBase;
 
 use pocketmine\event\Listener;
   
-class main extends PluginBase implements Listener {
+class Main extends PluginBase implements Listener {
 
 }
