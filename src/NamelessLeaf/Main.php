@@ -1,6 +1,6 @@
 <?php
 
-namespace NamelessLeaf\PvP\Main
+namespace NamelessLeaf\Main
 
 use pocketmne\Player;
 use pocketmine\Server;
