@@ -13,40 +13,28 @@ use pocketmine\event\Listener;
 use pocketmine\utils\TextFormat;
 use jojoe77777\FormAPI;
 
-class Main extends PluginBase implements Listener {
+class main extends PluginBase implements Listener {
   
   public function onEnable(){
+    $this->getLogger()->info("Its Enabled UvU");
+  }
+  
+  public fuction onDisable(){
+    $this->getLogger()->info("Its Disabled not UvU");
+  }
+  
+  public fuction onCommand(CommandSender $sender, Command $cmd, String $lable, Array $args) : bool {
     
     switch($cmd->getName()){
-      case "pvp":
+      case "test":
         if($sender instanceof Player){
-          $this->openMyForm($sender);
-      }
-      break;
-     }
-    
+          $this->form($sender);
+        } else {
+          $sender->sendMessage("you no player wtf? r u a pig");
+        }
+    }
     return true;
-  }   
+  }
   
-  $api = $this->getServer()->getPluginManager()->getPlugin("FormAPI");
-        $form = $api->createSimpleForm(function (Player $player, int $data = null){
-                    $result = $data;
-                    if ($result === null) {
-                        return;
-                    }
-                    if($result === 0) {
-                      
-                    }
-              
-                    switch ($result) {
-                        case 0:
-                        break;
-                    }
-                
-                    return;
-                } );
-                $form->setTitle("Title");
-                $form->setContent("yay content");
-                $form->addButton("test");
-                $form->sendToPlayer($player);
-}
+  public function form($player)
+}  
