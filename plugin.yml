@@ -1,5 +1,5 @@
 name: PvP
-main: NamelessLeaf\Main
+main: NamelessLeaf\PvP\Main
 author: NamelessLeaf
 version: "2.0"
 description: "A Thing"
