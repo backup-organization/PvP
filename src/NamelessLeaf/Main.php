@@ -10,7 +10,7 @@ use pocketmine\plugin\PluginBase;
 
 use pocketmine\event\Listener;
   
-class PvP extends PluginBase implements Listener {
+class main extends PluginBase implements Listener {
   
   public function onEnable(){
     $this->getLogger()->info("enabled");
